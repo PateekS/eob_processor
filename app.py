@@ -19,8 +19,8 @@ OUTPUT_FILE = './output/data.csv'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Explicit paths for Poppler and Tesseract
-POPPLER_PATH = os.path.join(os.getcwd(), "poppler-24.08.0", "Library", "bin") 
-TESSERACT_PATH = os.path.join(os.getcwd(), "tesseract-ocr-5.5", "tesseract.exe") 
+POPPLER_PATH = "/usr/bin"
+TESSERACT_PATH = "/usr/bin/tesseract"
 pytesseract.tesseract_cmd = TESSERACT_PATH
 
 # OpenAI API key (set as environment variable or directly here - not recommended for production)
