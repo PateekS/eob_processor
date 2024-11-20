@@ -1,6 +1,9 @@
 #!/bin/bash
-# Make Poppler binaries executable
-chmod +x poppler-24.08.0/Library/bin/*
+# Update package lists
+apt-get update
 
-# Make Tesseract executable
-chmod +x tesseract-ocr-5.5/tesseract.exe
+# Install Poppler utils for Linux
+apt-get install -y poppler-utils
+# Install Tesseract OCR for Linux
+apt-get install -y tesseract-ocr
+
